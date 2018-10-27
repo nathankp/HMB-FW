@@ -1,18 +1,21 @@
-Release 14.7 - xst P.20131013 (nt64)
+Release 14.7 - xst P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to xst/projnav.tmp
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.07 secs
  
---> Parameter xsthdpdir set to xst
+--> 
+Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.07 secs
  
---> Reading design: BMD_DC_TOP_V2.prj
+--> 
+Reading design: BMD_DC_TOP_V2.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -108,63 +111,63 @@ Cores Search Directories           : {"../hodo_dc_v1/cores"  }
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\hodo_dc_v1\cores\CMD_FIFO_w1r8.vhd" into library work
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/hodo_dc_v1/cores/CMD_FIFO_w1r8.vhd" into library work
 Parsing entity <CMD_FIFO_w1r8>.
 Parsing architecture <CMD_FIFO_w1r8_a> of entity <cmd_fifo_w1r8>.
-Parsing VHDL file "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\hodo_dc_v1\cores\CMD_FIFO_w8r32.vhd" into library work
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/hodo_dc_v1/cores/CMD_FIFO_w8r32.vhd" into library work
 Parsing entity <CMD_FIFO_w8r32>.
 Parsing architecture <CMD_FIFO_w8r32_a> of entity <cmd_fifo_w8r32>.
-Parsing VHDL file "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\hodo_dc_v1\cores\BMD_DC_CLK_GEN.vhd" into library work
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/hodo_dc_v1/cores/BMD_DC_CLK_GEN.vhd" into library work
 Parsing entity <BMD_DC_CLK_GEN>.
 Parsing architecture <xilinx> of entity <bmd_dc_clk_gen>.
-Parsing VHDL file "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\hodo_dc_v1\cores\waveform_fifo_wr32_rd32.vhd" into library work
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/hodo_dc_v1/cores/waveform_fifo_wr32_rd32.vhd" into library work
 Parsing entity <waveform_fifo_wr32_rd32>.
 Parsing architecture <waveform_fifo_wr32_rd32_a> of entity <waveform_fifo_wr32_rd32>.
-Parsing VHDL file "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\BMD_definitions.vhd" into library work
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/BMD_definitions.vhd" into library work
 Parsing package <BMD_definitions>.
 Parsing package body <BMD_definitions>.
-Parsing VHDL file "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\TX_DATA_SENDER.vhd" into library work
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/TX_DATA_SENDER.vhd" into library work
 Parsing entity <TX_DATA_SENDER>.
 Parsing architecture <Behavioral> of entity <tx_data_sender>.
-Parsing VHDL file "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\RX_ADDR_CHECK.vhd" into library work
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/RX_ADDR_CHECK.vhd" into library work
 Parsing entity <RX_ADDR_CHECKER>.
 Parsing architecture <Behavioral> of entity <rx_addr_checker>.
-Parsing VHDL file "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\mppc_bias_dac_AD5672R.vhd" into library work
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/mppc_bias_dac_AD5672R.vhd" into library work
 Parsing entity <mppc_bias_dac_AD5672R>.
 Parsing architecture <Behavioral> of entity <mppc_bias_dac_ad5672r>.
-Parsing VHDL file "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\edge_to_pulse_converter.vhd" into library work
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/edge_to_pulse_converter.vhd" into library work
 Parsing entity <edge_to_pulse_converter>.
 Parsing architecture <Behavioral> of entity <edge_to_pulse_converter>.
-Parsing VHDL file "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\TARGETX_DAC_CONTROL.vhd" into library work
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/TARGETX_DAC_CONTROL.vhd" into library work
 Parsing entity <TARGETX_DAC_CONTROL>.
 Parsing architecture <Behavioral> of entity <targetx_dac_control>.
-Parsing VHDL file "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\mppc_dac_calb.vhd" into library work
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/mppc_dac_calb.vhd" into library work
 Parsing entity <mppc_dac_calb>.
 Parsing architecture <Behavioral> of entity <mppc_dac_calb>.
-Parsing VHDL file "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\DC_COMM_PARSER.vhd" into library work
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/DC_COMM_PARSER.vhd" into library work
 Parsing entity <DC_COMM_PARSER>.
 Parsing architecture <Behavioral> of entity <dc_comm_parser>.
-Parsing VHDL file "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\BMD_TRIG_LOGIC.vhd" into library work
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/BMD_TRIG_LOGIC.vhd" into library work
 Parsing entity <BMD_TRIG_LOGIC>.
 Parsing architecture <Behavioral> of entity <bmd_trig_logic>.
-WARNING:HDLCompiler:946 - "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\BMD_TRIG_LOGIC.vhd" Line 127: Actual for formal port t is neither a static name nor a globally static expression
-Parsing VHDL file "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\BMD_DC_TOP_V1.vhd" into library work
+WARNING:HDLCompiler:946 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/BMD_TRIG_LOGIC.vhd" Line 127: Actual for formal port t is neither a static name nor a globally static expression
+Parsing VHDL file "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/BMD_DC_TOP_V1.vhd" into library work
 Parsing entity <BMD_DC_TOP_V2>.
 Parsing architecture <Behavioral> of entity <bmd_dc_top_v2>.
-WARNING:HDLCompiler:946 - "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\BMD_DC_TOP_V1.vhd" Line 256: Actual for formal port i is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\BMD_DC_TOP_V1.vhd" Line 264: Actual for formal port i is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\BMD_DC_TOP_V1.vhd" Line 339: Actual for formal port c1 is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\BMD_DC_TOP_V1.vhd" Line 354: Actual for formal port c1 is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\BMD_DC_TOP_V1.vhd" Line 389: Actual for formal port c1 is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\BMD_DC_TOP_V1.vhd" Line 403: Actual for formal port c0 is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/BMD_DC_TOP_V1.vhd" Line 256: Actual for formal port i is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/BMD_DC_TOP_V1.vhd" Line 264: Actual for formal port i is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/BMD_DC_TOP_V1.vhd" Line 339: Actual for formal port c1 is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/BMD_DC_TOP_V1.vhd" Line 354: Actual for formal port c1 is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/BMD_DC_TOP_V1.vhd" Line 389: Actual for formal port c1 is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/BMD_DC_TOP_V1.vhd" Line 403: Actual for formal port c0 is neither a static name nor a globally static expression
 
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
 
 Elaborating entity <BMD_DC_TOP_V2> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:871 - "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\BMD_DC_TOP_V1.vhd" Line 194: Using initial value '0' for readout_busy since it is never assigned
-WARNING:HDLCompiler:871 - "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\BMD_DC_TOP_V1.vhd" Line 198: Using initial value '0' for send_srt since it is never assigned
+WARNING:HDLCompiler:871 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/BMD_DC_TOP_V1.vhd" Line 194: Using initial value '0' for readout_busy since it is never assigned
+WARNING:HDLCompiler:871 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/BMD_DC_TOP_V1.vhd" Line 198: Using initial value '0' for send_srt since it is never assigned
 
 Elaborating entity <BMD_DC_CLK_GEN> (architecture <xilinx>) from library <work>.
 
@@ -175,47 +178,47 @@ Elaborating entity <RX_ADDR_CHECKER> (architecture <Behavioral>) from library <w
 Elaborating entity <CMD_FIFO_w1r8> (architecture <CMD_FIFO_w1r8_a>) from library <work>.
 
 Elaborating entity <CMD_FIFO_w8r32> (architecture <CMD_FIFO_w8r32_a>) from library <work>.
-INFO:HDLCompiler:679 - "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\RX_ADDR_CHECK.vhd" Line 330. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/RX_ADDR_CHECK.vhd" Line 330. Case statement is complete. others clause is never selected
 
 Elaborating entity <TX_DATA_SENDER> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <waveform_fifo_wr32_rd32> (architecture <waveform_fifo_wr32_rd32_a>) from library <work>.
-INFO:HDLCompiler:679 - "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\TX_DATA_SENDER.vhd" Line 220. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/TX_DATA_SENDER.vhd" Line 220. Case statement is complete. others clause is never selected
 
 Elaborating entity <TARGETX_DAC_CONTROL> (architecture <Behavioral>) with generics from library <work>.
-INFO:HDLCompiler:679 - "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\TARGETX_DAC_CONTROL.vhd" Line 348. Case statement is complete. others clause is never selected
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\BMD_DC_TOP_V1.vhd" Line 508: Assignment to trigger ignored, since the identifier is never used
+INFO:HDLCompiler:679 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/TARGETX_DAC_CONTROL.vhd" Line 348. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/BMD_DC_TOP_V1.vhd" Line 508: Assignment to trigger ignored, since the identifier is never used
 
 Elaborating entity <BMD_TRIG_LOGIC> (architecture <Behavioral>) from library <work>.
-INFO:HDLCompiler:679 - "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\BMD_TRIG_LOGIC.vhd" Line 232. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/BMD_TRIG_LOGIC.vhd" Line 232. Case statement is complete. others clause is never selected
 
 Elaborating entity <edge_to_pulse_converter> (architecture <Behavioral>) from library <work>.
-INFO:HDLCompiler:679 - "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\BMD_TRIG_LOGIC.vhd" Line 290. Case statement is complete. others clause is never selected
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\BMD_DC_TOP_V1.vhd" Line 537: Assignment to offet_direction ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\BMD_DC_TOP_V1.vhd" Line 538: Assignment to num_win_offet ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\BMD_DC_TOP_V1.vhd" Line 539: Assignment to num_win2read ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\BMD_DC_TOP_V1.vhd" Line 540: Assignment to fixed_win_en ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\BMD_DC_TOP_V1.vhd" Line 541: Assignment to fix_win_num ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\BMD_DC_TOP_V1.vhd" Line 542: Assignment to calc_ped_en ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\BMD_DC_TOP_V1.vhd" Line 543: Assignment to ped_n_averge ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\BMD_DC_TOP_V1.vhd" Line 544: Assignment to smp_win_cnt_rst ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\BMD_DC_TOP_V1.vhd" Line 545: Assignment to smp_rst_para ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\BMD_DC_TOP_V1.vhd" Line 546: Assignment to dig_ramp_len ignored, since the identifier is never used
+INFO:HDLCompiler:679 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/BMD_TRIG_LOGIC.vhd" Line 290. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/BMD_DC_TOP_V1.vhd" Line 537: Assignment to offet_direction ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/BMD_DC_TOP_V1.vhd" Line 538: Assignment to num_win_offet ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/BMD_DC_TOP_V1.vhd" Line 539: Assignment to num_win2read ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/BMD_DC_TOP_V1.vhd" Line 540: Assignment to fixed_win_en ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/BMD_DC_TOP_V1.vhd" Line 541: Assignment to fix_win_num ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/BMD_DC_TOP_V1.vhd" Line 542: Assignment to calc_ped_en ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/BMD_DC_TOP_V1.vhd" Line 543: Assignment to ped_n_averge ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/BMD_DC_TOP_V1.vhd" Line 544: Assignment to smp_win_cnt_rst ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/BMD_DC_TOP_V1.vhd" Line 545: Assignment to smp_rst_para ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/BMD_DC_TOP_V1.vhd" Line 546: Assignment to dig_ramp_len ignored, since the identifier is never used
 
 Elaborating entity <mppc_dac_calb> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <mppc_bias_dac_AD5672R> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:1127 - "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\mppc_dac_calb.vhd" Line 87: Assignment to dac_st ignored, since the identifier is never used
-WARNING:HDLCompiler:634 - "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\BMD_DC_TOP_V1.vhd" Line 151: Net <internal_sstin> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\BMD_DC_TOP_V1.vhd" Line 158: Net <wave_fifo_rst> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\BMD_DC_TOP_V1.vhd" Line 191: Net <ramp_srt> does not have a driver.
+WARNING:HDLCompiler:1127 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/mppc_dac_calb.vhd" Line 87: Assignment to dac_st ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/BMD_DC_TOP_V1.vhd" Line 151: Net <internal_sstin> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/BMD_DC_TOP_V1.vhd" Line 158: Net <wave_fifo_rst> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/BMD_DC_TOP_V1.vhd" Line 191: Net <ramp_srt> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <BMD_DC_TOP_V2>.
-    Related source file is "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\BMD_DC_TOP_V1.vhd".
+    Related source file is "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/BMD_DC_TOP_V1.vhd".
     Set property "KEEP = TRUE" for signal <tx_trigbits_l>.
     Set property "KEEP = TRUE" for signal <timer>.
     Set property "KEEP = TRUE" for signal <timer_last<31>>.
@@ -297,9 +300,9 @@ WARNING:Xst:647 - Input <TS_EVENT> is never used. This port will be preserved an
 WARNING:Xst:647 - Input <MON_Timing> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <MAS_ACK_N> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <MAS_ACK_P> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\BMD_DC_TOP_V1.vhd" line 424: Output port <TX_BUSY> of the instance <DC_COMM_PARSER> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\BMD_DC_TOP_V1.vhd" line 424: Output port <wave_fifo_full> of the instance <DC_COMM_PARSER> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\BMD_DC_TOP_V1.vhd" line 510: Output port <TRIG_BITS> of the instance <TARGETX_TRIGGER_LOGIC> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/BMD_DC_TOP_V1.vhd" line 424: Output port <TX_BUSY> of the instance <DC_COMM_PARSER> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/BMD_DC_TOP_V1.vhd" line 424: Output port <wave_fifo_full> of the instance <DC_COMM_PARSER> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/BMD_DC_TOP_V1.vhd" line 510: Output port <TRIG_BITS> of the instance <TARGETX_TRIGGER_LOGIC> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <internal_sstin> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <wave_fifo_rst> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <ramp_srt> is used but never assigned. This sourceless signal will be automatically connected to value GND.
@@ -386,13 +389,13 @@ INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal timer_pat may hin
 Unit <BMD_DC_TOP_V2> synthesized.
 
 Synthesizing Unit <BMD_DC_CLK_GEN>.
-    Related source file is "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\hodo_dc_v1\cores\BMD_DC_CLK_GEN.vhd".
+    Related source file is "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/hodo_dc_v1/cores/BMD_DC_CLK_GEN.vhd".
     Summary:
 	no macro.
 Unit <BMD_DC_CLK_GEN> synthesized.
 
 Synthesizing Unit <DC_COMM_PARSER>.
-    Related source file is "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\DC_COMM_PARSER.vhd".
+    Related source file is "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/DC_COMM_PARSER.vhd".
     Found 1-bit register for signal <internal_dc_dc_dout>.
     Found 1-bit register for signal <DC_MAS_TX>.
     Found 1-bit register for signal <DC_MAS_DATA_OUT>.
@@ -405,12 +408,12 @@ Synthesizing Unit <DC_COMM_PARSER>.
 Unit <DC_COMM_PARSER> synthesized.
 
 Synthesizing Unit <RX_ADDR_CHECKER>.
-    Related source file is "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\RX_ADDR_CHECK.vhd".
+    Related source file is "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/RX_ADDR_CHECK.vhd".
     Set property "KEEP = TRUE" for signal <rx_st>.
 WARNING:Xst:647 - Input <DC_ADDR> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <OOPS_RESET> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\RX_ADDR_CHECK.vhd" line 97: Output port <full> of the instance <MAS_DC_RX_FIFO_W1R8> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\RX_ADDR_CHECK.vhd" line 110: Output port <full> of the instance <MAS_DC_RX_FIFO_W8R32> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/RX_ADDR_CHECK.vhd" line 97: Output port <full> of the instance <MAS_DC_RX_FIFO_W1R8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/RX_ADDR_CHECK.vhd" line 110: Output port <full> of the instance <MAS_DC_RX_FIFO_W8R32> is unconnected or connected to loadless signal.
     Found 1-bit register for signal <OUTPUT_REG<0><0>>.
     Found 4-bit register for signal <reg_state>.
     Found 32-bit register for signal <bit_count>.
@@ -496,10 +499,10 @@ WARNING:Xst:737 - Found 1-bit latch for signal <rx_st_rst>. Latches may be gener
 Unit <RX_ADDR_CHECKER> synthesized.
 
 Synthesizing Unit <TX_DATA_SENDER>.
-    Related source file is "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\TX_DATA_SENDER.vhd".
+    Related source file is "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/TX_DATA_SENDER.vhd".
     Set property "KEEP = TRUE" for signal <tx_st>.
 WARNING:Xst:647 - Input <CLK> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\TX_DATA_SENDER.vhd" line 91: Output port <full> of the instance <waveform_fifo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/TX_DATA_SENDER.vhd" line 91: Output port <full> of the instance <waveform_fifo> is unconnected or connected to loadless signal.
     Found 32-bit register for signal <tx_st>.
     Found 1-bit register for signal <wave_fifo_rd_en>.
     Found 32-bit register for signal <bit_count>.
@@ -538,7 +541,7 @@ INFO:Xst:3210 - "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_h
 Unit <TX_DATA_SENDER> synthesized.
 
 Synthesizing Unit <TARGETX_DAC_CONTROL>.
-    Related source file is "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\TARGETX_DAC_CONTROL.vhd".
+    Related source file is "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/TARGETX_DAC_CONTROL.vhd".
         REGISTER_WIDTH = 19
 WARNING:Xst:647 - Input <OOPS_RESET> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 1-bit register for signal <SIN>.
@@ -580,7 +583,7 @@ WARNING:Xst:647 - Input <OOPS_RESET> is never used. This port will be preserved 
 Unit <TARGETX_DAC_CONTROL> synthesized.
 
 Synthesizing Unit <BMD_TRIG_LOGIC>.
-    Related source file is "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\BMD_TRIG_LOGIC.vhd".
+    Related source file is "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/BMD_TRIG_LOGIC.vhd".
     Set property "KEEP = TRUE" for signal <t_st>.
     Set property "KEEP = TRUE" for signal <scrod_ack>.
     Set property "KEEP = TRUE" for signal <next_DC_trig>.
@@ -646,7 +649,7 @@ INFO:Xst:1799 - State rd_done is never reached in FSM <trig_st>.
 Unit <BMD_TRIG_LOGIC> synthesized.
 
 Synthesizing Unit <edge_to_pulse_converter>.
-    Related source file is "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\edge_to_pulse_converter.vhd".
+    Related source file is "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/edge_to_pulse_converter.vhd".
     Found 1-bit register for signal <output0>.
     Found 1-bit register for signal <output1>.
     Found 1-bit register for signal <output2>.
@@ -655,7 +658,7 @@ Synthesizing Unit <edge_to_pulse_converter>.
 Unit <edge_to_pulse_converter> synthesized.
 
 Synthesizing Unit <mppc_dac_calb>.
-    Related source file is "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\mppc_dac_calb.vhd".
+    Related source file is "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/mppc_dac_calb.vhd".
 WARNING:Xst:647 - Input <DAC_ADDR<4:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <CLOCK> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 1-bit register for signal <DAC_BUSY>.
@@ -691,7 +694,7 @@ INFO:Xst:1799 - State write_done is never reached in FSM <state>.
 Unit <mppc_dac_calb> synthesized.
 
 Synthesizing Unit <mppc_bias_dac_AD5672R>.
-    Related source file is "C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\source\mppc_bias_dac_AD5672R.vhd".
+    Related source file is "/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/source/mppc_bias_dac_AD5672R.vhd".
     Set property "KEEP = TRUE" for signal <data>.
     Found 1-bit register for signal <SYNC>.
     Found 1-bit register for signal <LDAC>.
@@ -2849,12 +2852,13 @@ CLOCK_FANOUT/pll_base_inst/CLKOUT0|         |         |    1.436|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 20.00 secs
-Total CPU time to Xst completion: 20.22 secs
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 11.64 secs
  
 --> 
 
-Total memory usage is 4527036 kilobytes
+
+Total memory usage is 418580 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings : 1417 (   0 filtered)

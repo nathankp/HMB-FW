@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\ise\BMD_DC_TOP_V2.ncd
-OUTFILE=C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\ise\BMD_DC_TOP_V2.bit
+INFILE=/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/ise/BMD_DC_TOP_V2.ncd
+OUTFILE=/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/ise/BMD_DC_TOP_V2.bit
 FAMILY=Spartan6
 PART=xc6slx9-2tqg144
-WORKINGDIR=C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\ise
-LICENSE=ISE
+WORKINGDIR=/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/ise
+LICENSE=WebPack
 USER_INFO=176018512_208276174_210685983_860

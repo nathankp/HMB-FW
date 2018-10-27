@@ -1,16 +1,16 @@
-Release 14.7 par P.20131013 (nt64)
+Release 14.7 par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-PC1::  Thu Sep 13 13:17:18 2018
+mrich-OptiPlex-390::  Fri Oct 26 18:28:39 2018
 
 par -filter
-C:/Users/Kevin/Dropbox/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/hodo_dc
-_v1/iseconfig/filter.filter -w -intstyle ise -ol high -xe n -mt 4
+/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/hod
+o_dc_v1/iseconfig/filter.filter -w -intstyle ise -ol high -xe n -mt 4
 BMD_DC_TOP_V2_map.ncd BMD_DC_TOP_V2.ncd BMD_DC_TOP_V2.pcf 
 
 
 Constraints file: BMD_DC_TOP_V2.pcf.
-Loading device for application Rf_Device from file '6slx9.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+Loading device for application Rf_Device from file '6slx9.nph' in environment /opt/Xilinx/14.7/ISE_DS/ISE/.
    "BMD_DC_TOP_V2" is an NCD, version 3.2, device xc6slx9, package tqg144, speed -2
 
 Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
@@ -29,11 +29,11 @@ Slice Logic Utilization:
     Number used as Latches:                     66
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                1
-  Number of Slice LUTs:                      1,695 out of   5,720   29%
-    Number used as logic:                    1,135 out of   5,720   19%
-      Number using O6 output only:             574
-      Number using O5 output only:             135
-      Number using O5 and O6:                  426
+  Number of Slice LUTs:                      1,697 out of   5,720   29%
+    Number used as logic:                    1,138 out of   5,720   19%
+      Number using O6 output only:             583
+      Number using O5 output only:             134
+      Number using O5 and O6:                  421
       Number used as ROM:                        0
     Number used as Memory:                      94 out of   1,440    6%
       Number used as Dual Port RAM:              0
@@ -42,18 +42,18 @@ Slice Logic Utilization:
         Number using O6 output only:            92
         Number using O5 output only:             1
         Number using O5 and O6:                  1
-    Number used exclusively as route-thrus:    466
-      Number with same-slice register load:    453
+    Number used exclusively as route-thrus:    465
+      Number with same-slice register load:    452
       Number with same-slice carry load:        13
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   728 out of   1,430   50%
+  Number of occupied Slices:                   711 out of   1,430   49%
   Number of MUXCYs used:                       576 out of   2,860   20%
-  Number of LUT Flip Flop pairs used:        2,309
-    Number with an unused Flip Flop:           507 out of   2,309   21%
-    Number with an unused LUT:                 614 out of   2,309   26%
-    Number of fully used LUT-FF pairs:       1,188 out of   2,309   51%
+  Number of LUT Flip Flop pairs used:        2,303
+    Number with an unused Flip Flop:           503 out of   2,303   21%
+    Number with an unused LUT:                 606 out of   2,303   26%
+    Number of fully used LUT-FF pairs:       1,194 out of   2,303   51%
     Number of slice register sites lost
       to control set restrictions:               0 out of  11,440    0%
 
@@ -135,29 +135,29 @@ WARNING:Par:288 - The signal MAS_ACK_P_IBUF has no load.  PAR will not attempt t
 Starting Multi-threaded Router
 
 
-Phase  1  : 9235 unrouted;      REAL time: 9 secs 
+Phase  1  : 9270 unrouted;      REAL time: 5 secs 
 
-Phase  2  : 7262 unrouted;      REAL time: 9 secs 
+Phase  2  : 7292 unrouted;      REAL time: 6 secs 
 
-Phase  3  : 2576 unrouted;      REAL time: 12 secs 
+Phase  3  : 2571 unrouted;      REAL time: 9 secs 
 
-Phase  4  : 2576 unrouted; (Setup:0, Hold:114, Component Switching Limit:0)     REAL time: 12 secs 
+Phase  4  : 2571 unrouted; (Setup:0, Hold:214, Component Switching Limit:0)     REAL time: 9 secs 
 
 Updating file: BMD_DC_TOP_V2.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:0, Hold:114, Component Switching Limit:0)     REAL time: 14 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:211, Component Switching Limit:0)     REAL time: 11 secs 
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:114, Component Switching Limit:0)     REAL time: 14 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:211, Component Switching Limit:0)     REAL time: 11 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:114, Component Switching Limit:0)     REAL time: 14 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:211, Component Switching Limit:0)     REAL time: 11 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:114, Component Switching Limit:0)     REAL time: 14 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:211, Component Switching Limit:0)     REAL time: 11 secs 
 
-Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 14 secs 
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 11 secs 
 
-Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 15 secs 
-Total REAL time to Router completion: 15 secs 
-Total CPU time to Router completion (all processors): 14 secs 
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 12 secs 
+Total REAL time to Router completion: 12 secs 
+Total CPU time to Router completion (all processors): 18 secs 
 
 Generating "PAR" statistics.
 
@@ -168,27 +168,27 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|            asic_clk |  BUFGMUX_X2Y4| No   |  200 |  0.716     |  2.109      |
+|      DC_DC_DATA_CLK |  BUFGMUX_X2Y1| No   |  313 |  0.749     |  2.140      |
 +---------------------+--------------+------+------+------------+-------------+
-|      DC_DC_DATA_CLK |  BUFGMUX_X2Y1| No   |  311 |  0.749     |  2.140      |
+|            asic_clk |  BUFGMUX_X2Y4| No   |  198 |  0.709     |  2.108      |
 +---------------------+--------------+------+------+------------+-------------+
-|             aux_clk |  BUFGMUX_X2Y2| No   |   26 |  0.070     |  1.502      |
+|             aux_clk |  BUFGMUX_X2Y2| No   |   21 |  0.100     |  1.491      |
 +---------------------+--------------+------+------+------------+-------------+
-|    icon_control0<0> | BUFGMUX_X2Y10| No   |   73 |  0.079     |  1.469      |
+|    icon_control0<0> | BUFGMUX_X2Y10| No   |   73 |  0.114     |  1.507      |
 +---------------------+--------------+------+------+------------+-------------+
-|    send_pat<0>_BUFG | BUFGMUX_X2Y12| No   |    8 |  0.013     |  1.448      |
+|    send_pat<0>_BUFG | BUFGMUX_X2Y12| No   |    8 |  0.067     |  1.465      |
 +---------------------+--------------+------+------+------------+-------------+
 |wave_fifo_wr_en_BUFG |              |      |      |            |             |
-|                     | BUFGMUX_X3Y13| No   |    8 |  0.069     |  1.509      |
+|                     | BUFGMUX_X3Y13| No   |    8 |  0.013     |  1.466      |
 +---------------------+--------------+------+------+------------+-------------+
 |U_icon_pro/U0/iUPDAT |              |      |      |            |             |
 |               E_OUT |         Local|      |    1 |  0.000     |  0.983      |
 +---------------------+--------------+------+------+------------+-------------+
-|        ][10681_2082 |         Local|      |    2 |  0.000     |  1.088      |
+|        ][10681_2083 |         Local|      |    2 |  0.000     |  1.647      |
 +---------------------+--------------+------+------+------------+-------------+
-|   icon_control0<13> |         Local|      |    4 |  0.000     |  1.249      |
+|   icon_control0<13> |         Local|      |    4 |  0.000     |  0.882      |
 +---------------------+--------------+------+------+------------+-------------+
-|       lut13305_2060 |         Local|      |    1 |  0.000     |  0.371      |
+|        lut2732_2061 |         Local|      |    1 |  0.000     |  0.644      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -213,38 +213,38 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  TS_asic_clk = PERIOD TIMEGRP "asic_clk" 1 | SETUP       |     6.094ns|     7.746ns|       0|           0
-  6 ns HIGH 50%                             | HOLD        |     0.376ns|            |       0|           0
+  TS_asic_clk = PERIOD TIMEGRP "asic_clk" 1 | SETUP       |     5.760ns|     8.418ns|       0|           0
+  6 ns HIGH 50%                             | HOLD        |     0.382ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  TS_U_TO_J = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    10.749ns|     4.251ns|       0|           0
-   TO TIMEGRP "J_CLK" 15 ns                 | HOLD        |     1.041ns|            |       0|           0
+  TS_U_TO_J = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    10.897ns|     4.103ns|       0|           0
+   TO TIMEGRP "J_CLK" 15 ns                 | HOLD        |     0.942ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  TS_U_TO_U = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    14.006ns|     0.994ns|       0|           0
-   TO TIMEGRP "U_CLK" 15 ns                 | HOLD        |     0.440ns|            |       0|           0
+  TS_U_TO_U = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    13.914ns|     1.086ns|       0|           0
+   TO TIMEGRP "U_CLK" 15 ns                 | HOLD        |     0.490ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  TS_DC_DATA_CLK = PERIOD TIMEGRP "DC_DC_DA | SETUP       |    14.030ns|    11.940ns|       0|           0
-  TA_CLK" 40 ns HIGH 50%                    | HOLD        |     0.327ns|            |       0|           0
+  TS_DC_DATA_CLK = PERIOD TIMEGRP "DC_DC_DA | SETUP       |    15.075ns|    11.248ns|       0|           0
+  TA_CLK" 40 ns HIGH 50%                    | HOLD        |     0.301ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  TS_J_CLK = PERIOD TIMEGRP "J_CLK" 30 ns H | SETUP       |    22.158ns|     7.842ns|       0|           0
-  IGH 50%                                   | HOLD        |     0.291ns|            |       0|           0
+  TS_J_CLK = PERIOD TIMEGRP "J_CLK" 30 ns H | SETUP       |    20.781ns|     9.219ns|       0|           0
+  IGH 50%                                   | HOLD        |     0.284ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   TS_sys_clk = PERIOD TIMEGRP "sys_clk" 40  | MINPERIOD   |    36.430ns|     3.570ns|       0|           0
   ns HIGH 50%                               |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_AUX_CLK = PERIOD TIMEGRP "aux_clk" 100 | SETUP       |    92.970ns|     7.030ns|       0|           0
-   ns HIGH 50%                              | HOLD        |     0.413ns|            |       0|           0
+  TS_AUX_CLK = PERIOD TIMEGRP "aux_clk" 100 | SETUP       |    92.173ns|     7.827ns|       0|           0
+   ns HIGH 50%                              | HOLD        |     0.417ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_D2_TO_T2_ila_pro_0_path" TIG     | SETUP       |         N/A|     3.588ns|     N/A|           0
+  PATH "TS_D2_TO_T2_ila_pro_0_path" TIG     | SETUP       |         N/A|     4.416ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
   PATH "TS_J2_TO_D2_ila_pro_0_path" TIG     | N/A         |         N/A|         N/A|     N/A|         N/A
 ----------------------------------------------------------------------------------------------------------
   PATH "TS_J3_TO_D2_ila_pro_0_path" TIG     | N/A         |         N/A|         N/A|     N/A|         N/A
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_J4_TO_D2_ila_pro_0_path" TIG     | MAXDELAY    |         N/A|     4.749ns|     N/A|           0
+  PATH "TS_J4_TO_D2_ila_pro_0_path" TIG     | MAXDELAY    |         N/A|     4.748ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_J_TO_D_path" TIG                 | SETUP       |         N/A|     6.968ns|     N/A|           0
+  PATH "TS_J_TO_D_path" TIG                 | SETUP       |         N/A|     6.610ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_D_TO_J_path" TIG                 | SETUP       |         N/A|     4.285ns|     N/A|           0
+  PATH "TS_D_TO_J_path" TIG                 | SETUP       |         N/A|     4.588ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -262,10 +262,10 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 22 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 15 secs 
-Total CPU time to PAR completion (all processors): 15 secs 
+Total REAL time to PAR completion: 13 secs 
+Total CPU time to PAR completion (all processors): 18 secs 
 
-Peak Memory Usage:  4574 MB
+Peak Memory Usage:  1109 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

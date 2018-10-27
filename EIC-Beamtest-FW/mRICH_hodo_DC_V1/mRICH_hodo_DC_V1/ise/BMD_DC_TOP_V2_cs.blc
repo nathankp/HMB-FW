@@ -1,17 +1,18 @@
-Release 14.7 ngcbuild P.20131013 (nt64)
+Release 14.7 ngcbuild P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Command Line: ngcbuild.exe -dd
-C:/Users/Kevin/Dropbox/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/ise/_ng
-o -sd ../hodo_dc_v1/cores -p xc6slx9-tqg144-2 -i
-C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\ise\BMD
-_DC_TOP_V2.ngc
-C:\Users\Kevin\Dropbox\EIC-Beamtest-FW\mRICH_hodo_DC_V1\mRICH_hodo_DC_V1\ise\BMD
-_DC_TOP_V2_cs.ngc
+Command Line: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/ngcbuild -dd
+/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/ise
+/_ngo -sd ../hodo_dc_v1/cores -p xc6slx9-tqg144-2 -i
+/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/ise
+/BMD_DC_TOP_V2.ngc
+/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/ise
+/BMD_DC_TOP_V2_cs.ngc
 
+Prepending components to an absolute path is invalid.
 Reading NGO file
-"C:/Users/Kevin/Dropbox/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/ise/BM
-D_DC_TOP_V2.ngc" ...
+"/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/is
+e/BMD_DC_TOP_V2.ngc" ...
 Loading design module "../hodo_dc_v1/cores/CMD_FIFO_w1r8.ngc"...
 Loading design module "../hodo_dc_v1/cores/CMD_FIFO_w8r32.ngc"...
 Loading design module "../hodo_dc_v1/cores/waveform_fifo_wr32_rd32.ngc"...
@@ -27,14 +28,14 @@ NGCBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 4416864 kilobytes
+Total memory usage is 400064 kilobytes
 
 Writing NGC file
-"C:/Users/Kevin/Dropbox/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/ise/BM
-D_DC_TOP_V2_cs.ngc" ...
+"/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/is
+e/BMD_DC_TOP_V2_cs.ngc" ...
 Total REAL time to NGCBUILD completion:  2 sec
 Total CPU time to NGCBUILD completion:   2 sec
 
 Writing NGCBUILD log file
-"C:/Users/Kevin/Dropbox/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/ise/BM
-D_DC_TOP_V2_cs.blc"...
+"/home/mrich/Desktop/HMB-FW/EIC-Beamtest-FW/mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/is
+e/BMD_DC_TOP_V2_cs.blc"...

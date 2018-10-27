@@ -23,8 +23,11 @@
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="../hodo_dc_v1/cores/coregen.log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="BMD_DC_TOP_V2.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="BMD_DC_TOP_V2.bit" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="BMD_DC_TOP_V2.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="BMD_DC_TOP_V2.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="BMD_DC_TOP_V2.drc" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="BMD_DC_TOP_V2.lso"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="BMD_DC_TOP_V2.ncd" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="BMD_DC_TOP_V2.ngc"/>
@@ -180,12 +183,12 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1536973232" xil_pn:in_ck="5093014325462712732" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-6492648067078009394" xil_pn:start_ts="1536973209">
+    <transform xil_pn:end_ts="1540614247" xil_pn:in_ck="5093014325462712732" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-6492648067078009394" xil_pn:start_ts="1540614232">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="BMD_DC_TOP_V2.lso"/>
       <outfile xil_pn:name="BMD_DC_TOP_V2.ngc"/>
       <outfile xil_pn:name="BMD_DC_TOP_V2.ngr"/>
@@ -198,15 +201,14 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1536977192" xil_pn:in_ck="4389716498938232646" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-6256562816576801974" xil_pn:start_ts="1536977192">
+    <transform xil_pn:end_ts="1540614461" xil_pn:in_ck="4389716498938232646" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-6256562816576801974" xil_pn:start_ts="1540614461">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1536977207" xil_pn:in_ck="-3458054350879436467" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-5230337665154569043" xil_pn:start_ts="1536977192">
-      <status xil_pn:value="FailedRun"/>
+    <transform xil_pn:end_ts="1540614472" xil_pn:in_ck="-3458054350879436467" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-5230337665154569043" xil_pn:start_ts="1540614461">
+      <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="BMD_DC_TOP_V2.bld"/>
       <outfile xil_pn:name="BMD_DC_TOP_V2.ngd"/>
       <outfile xil_pn:name="BMD_DC_TOP_V2_cs.blc"/>
@@ -215,15 +217,10 @@
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1536880636" xil_pn:in_ck="5564918798960779288" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="-2903518721921031492" xil_pn:start_ts="1536880590">
+    <transform xil_pn:end_ts="1540614518" xil_pn:in_ck="5564918798960779288" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="-2903518721921031492" xil_pn:start_ts="1540614472">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="BMD_DC_TOP_V2.pcf"/>
       <outfile xil_pn:name="BMD_DC_TOP_V2_map.map"/>
       <outfile xil_pn:name="BMD_DC_TOP_V2_map.mrp"/>
@@ -235,13 +232,10 @@
       <outfile xil_pn:name="BMD_DC_TOP_V2_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1536880662" xil_pn:in_ck="7430821971577382737" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="5773473110588446613" xil_pn:start_ts="1536880636">
+    <transform xil_pn:end_ts="1540614539" xil_pn:in_ck="7430821971577382737" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="5773473110588446613" xil_pn:start_ts="1540614518">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="BMD_DC_TOP_V2.ncd"/>
       <outfile xil_pn:name="BMD_DC_TOP_V2.pad"/>
       <outfile xil_pn:name="BMD_DC_TOP_V2.par"/>
@@ -253,16 +247,15 @@
       <outfile xil_pn:name="BMD_DC_TOP_V2_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1536969809" xil_pn:in_ck="-6200668219423175312" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1536969792">
-      <status xil_pn:value="AbortedRun"/>
+    <transform xil_pn:end_ts="1540614550" xil_pn:in_ck="-6200668219423175312" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1540614539">
+      <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="BMD_DC_TOP_V2.bgn"/>
+      <outfile xil_pn:name="BMD_DC_TOP_V2.bit"/>
+      <outfile xil_pn:name="BMD_DC_TOP_V2.drc"/>
       <outfile xil_pn:name="BMD_DC_TOP_V2.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
-      <outfile xil_pn:name="bmd_dc_top_v2.bgn"/>
-      <outfile xil_pn:name="bmd_dc_top_v2.bit"/>
-      <outfile xil_pn:name="bmd_dc_top_v2.drc"/>
       <outfile xil_pn:name="usage_statistics_webtalk.html"/>
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
@@ -270,14 +263,12 @@
     <transform xil_pn:end_ts="1536969828" xil_pn:in_ck="6237772871378509914" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="8482462020707587906" xil_pn:start_ts="1536969826">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
     </transform>
-    <transform xil_pn:end_ts="1536880662" xil_pn:in_ck="-6446823987190234348" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1536880655">
+    <transform xil_pn:end_ts="1540614539" xil_pn:in_ck="-6446823987190234348" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1540614533">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="BMD_DC_TOP_V2.twr"/>
       <outfile xil_pn:name="BMD_DC_TOP_V2.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
@@ -287,7 +278,6 @@
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="netgen"/>
       <outfile xil_pn:name="netgen/synthesis/BMD_DC_TOP_V2_synthesis.nlf"/>

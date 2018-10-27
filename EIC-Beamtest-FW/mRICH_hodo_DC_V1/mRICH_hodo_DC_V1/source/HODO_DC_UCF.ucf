@@ -182,10 +182,10 @@ NET	"WR2_ENA"        LOC = "p119";#checked
 #NET	"SRAM_CS        LOC = "p55";
 	                         
 ########## flash interface signals ########################################################### originally commented out, added in 
-NET	"flash_do"      LOC = "p65";
-NET	"flash_clk"     LOC = "p70";
-NET	"flash_di"      LOC = "p64";
-NET 	"flash_cs"		 LOC = "p38"; #didn't exist, added in because schematic calls for it
+#NET	"flash_do"      LOC = "p65";
+#NET	"flash_clk"     LOC = "p70";
+#NET	"flash_di"      LOC = "p64";
+#NET 	"flash_cs"		 LOC = "p38"; #didn't exist, added in because schematic calls for it
 #NET	"flash_wp       LOC = "p62"; not in rev B
 #NET	"flash_hold     LOC = "p61"; not in rev B
 	                         

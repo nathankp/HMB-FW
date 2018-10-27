@@ -57,7 +57,7 @@ if len(sys.argv)!=5:
 	print usageMSG
 	exit(-1)
 
-interface = "enp1s0f0"#sys.argv[1]
+interface = "enp1s0f0"#sys.argv[1] on mRICH workbench PC use "enp1s0f0", Khanh's PC use "eth2"
 dc_num   = sys.argv[1]
 com_type = sys.argv[2]
 reg_num  = sys.argv[3]

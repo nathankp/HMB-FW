@@ -109,7 +109,7 @@ if rawHV<0 or rawHV>100 or asicMask>"f" or CalbMode>4 or CalbMode<0:
     exit(-1)
 
 
-interface = "eth2"#sys.argv[1]   #MIGHT NEED MODIFYING
+interface = "enp1s0f0"#sys.argv[1]   #MIGHT NEED MODIFYING: on mRICH workbench PC use "enp1s0f0", Khanh's PC use "eth2"
 
 #--------- ETHERNET CONFIGURATION ----------#   #already set in firmware, no need to change these lines
 addr_fpga = '192.168.20.5'
@@ -127,7 +127,7 @@ ctrl.open()
 def readReg(asic,RegNo):
 	asic = int(asic)
 	#dc_num = hex(asic).split('x')[1] #no need to do this, TL
-    dc_num = str(asic)
+        dc_num = str(asic)
 	syncwd = "000000010253594e4300000000"
 	buffSize = 200
 	if asic == 0:

@@ -56,3 +56,4 @@ map -filter "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLi
 par -filter "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/iseconfig/filter.filter" -w -intstyle ise -ol high -mt off SCRODQB_Top_map.ncd SCRODQB_Top.ncd SCRODQB_Top.pcf 
 trce -filter C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/iseconfig/filter.filter -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml SCRODQB_Top.twx SCRODQB_Top.ncd -o SCRODQB_Top.twr SCRODQB_Top.pcf 
 bitgen -filter "iseconfig/filter.filter" -intstyle ise -f SCRODQB_Top.ut SCRODQB_Top.ncd 
+xst -intstyle ise -filter "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/iseconfig/filter.filter" -ifn "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/SCRODQB_Top.xst" -ofn "C:/Users/Kevin/Desktop/HMB/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_QBLinkProto/SCRODQB_Top.syr" 

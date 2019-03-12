@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total CPU time to Xst completion: 0.19 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total CPU time to Xst completion: 0.19 secs
  
 --> Reading design: SCRODQB_Top.prj
 
@@ -154,15 +154,15 @@ Parsing architecture <xilinx> of entity <clk_fanout>.
 Parsing VHDL file "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_QBLinkProto\SCRODQB_Top.vhd" into library work
 Parsing entity <SCRODQB_Top>.
 Parsing architecture <Behavioral> of entity <scrodqb_top>.
-WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_QBLinkProto\SCRODQB_Top.vhd" Line 136: Actual for formal port c1 is neither a static name nor a globally static expression
-WARNING:HDLCompiler:1238 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_QBLinkProto\SCRODQB_Top.vhd" Line 187: Prefix of expanded name does not denote an enclosing construct
+WARNING:HDLCompiler:946 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_QBLinkProto\SCRODQB_Top.vhd" Line 122: Actual for formal port c1 is neither a static name nor a globally static expression
+WARNING:HDLCompiler:1238 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_QBLinkProto\SCRODQB_Top.vhd" Line 154: Prefix of expanded name does not denote an enclosing construct
 
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
 
 Elaborating entity <SCRODQB_Top> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:871 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_QBLinkProto\SCRODQB_Top.vhd" Line 74: Using initial value '0' for qb_rst since it is never assigned
+WARNING:HDLCompiler:871 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_QBLinkProto\SCRODQB_Top.vhd" Line 67: Using initial value '0' for qb_rst since it is never assigned
 
 Elaborating entity <CLK_FANOUT> (architecture <xilinx>) from library <work>.
 
@@ -205,14 +205,15 @@ Elaborating entity <CMD_FIFO_w8r32> (architecture <CMD_FIFO_w8r32_a>) from libra
 
 Synthesizing Unit <SCRODQB_Top>.
     Related source file is "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_QBLinkProto\SCRODQB_Top.vhd".
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_QBLinkProto\SCRODQB_Top.vhd" line 91: Output port <CLK_OUT1> of the instance <CLK_FANOUT_1TO2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_QBLinkProto\SCRODQB_Top.vhd" line 187: Output port <localWordOutValid> of the instance <comm_process> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_QBLinkProto\SCRODQB_Top.vhd" line 84: Output port <CLK_OUT1> of the instance <CLK_FANOUT_1TO2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_QBLinkProto\SCRODQB_Top.vhd" line 154: Output port <localWordOutValid> of the instance <comm_process> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\HMB\EIC-Beamtest-FW\SCROD_A5_RJ45\SCROD_QBLinkProto\SCRODQB_Top.vhd" line 154: Output port <serialClkLocked> of the instance <comm_process> is unconnected or connected to loadless signal.
     Found 2-bit register for signal <CtrlState>.
     Found 2-bit register for signal <CommState>.
-    Found 4x4-bit Read Only RAM for signal <_n0278>
-    Found 4x5-bit Read Only RAM for signal <_n0283>
-    Found 1-bit 3-to-1 multiplexer for signal <CommState[1]_X_8_o_Mux_81_o> created at line 216.
-    Found 1-bit 4-to-1 multiplexer for signal <CtrlState[1]_GND_77_o_Mux_93_o> created at line 249.
+    Found 4x4-bit Read Only RAM for signal <_n0276>
+    Found 4x5-bit Read Only RAM for signal <_n0281>
+    Found 1-bit 3-to-1 multiplexer for signal <CommState[1]_X_8_o_Mux_81_o> created at line 176.
+    Found 1-bit 4-to-1 multiplexer for signal <CtrlState[1]_GND_77_o_Mux_93_o> created at line 209.
 WARNING:Xst:737 - Found 1-bit latch for signal <dc_cmd_valid>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <rd_req>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <dc_cmd<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -237,9 +238,9 @@ Unit <CLK_FANOUT> synthesized.
 
 Synthesizing Unit <QBlink>.
     Related source file is "C:\Users\Kevin\Desktop\QBLink\QBLink\source\QBlink.vhd".
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\QBLink\QBLink\source\QBlink.vhd" line 150: Output port <full> of the instance <QBlink_TX_FIFO_W32R8> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\QBLink\QBLink\source\QBlink.vhd" line 150: Output port <overflow> of the instance <QBlink_TX_FIFO_W32R8> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Kevin\Desktop\QBLink\QBLink\source\QBlink.vhd" line 170: Output port <full> of the instance <QBlink_RX_FIFO_W8R32> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\QBLink\QBLink\source\QBlink.vhd" line 151: Output port <full> of the instance <QBlink_TX_FIFO_W32R8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\QBLink\QBLink\source\QBlink.vhd" line 151: Output port <overflow> of the instance <QBlink_TX_FIFO_W32R8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Kevin\Desktop\QBLink\QBLink\source\QBlink.vhd" line 171: Output port <full> of the instance <QBlink_RX_FIFO_W8R32> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <QBlink> synthesized.
@@ -446,7 +447,7 @@ The following registers are absorbed into counter <r_slipCount>: 1 register on s
 Unit <S6SerialInterfaceIn> synthesized (advanced).
 
 Synthesizing (advanced) Unit <SCRODQB_Top>.
-INFO:Xst:3231 - The small RAM <Mram__n0283> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+INFO:Xst:3231 - The small RAM <Mram__n0281> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -457,7 +458,7 @@ INFO:Xst:3231 - The small RAM <Mram__n0283> will be implemented on LUTs in order
     |     diA            | connected to signal <GND>           |          |
     |     doA            | connected to internal node          |          |
     -----------------------------------------------------------------------
-INFO:Xst:3231 - The small RAM <Mram__n0278> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+INFO:Xst:3231 - The small RAM <Mram__n0276> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -654,8 +655,8 @@ Primitive and Black Box Usage:
 #      GND                         : 9
 #      INV                         : 22
 #      LUT1                        : 18
-#      LUT2                        : 127
-#      LUT3                        : 57
+#      LUT2                        : 125
+#      LUT3                        : 59
 #      LUT4                        : 65
 #      LUT5                        : 44
 #      LUT6                        : 80
@@ -679,10 +680,9 @@ Primitive and Black Box Usage:
 #      RAMB8BWER                   : 2
 # Clock Buffers                    : 4
 #      BUFG                        : 4
-# IO Buffers                       : 7
+# IO Buffers                       : 5
 #      IBUFDS                      : 1
 #      IBUFGDS                     : 1
-#      OBUF                        : 2
 #      OBUFDS                      : 3
 # DCMs                             : 2
 #      DCM_SP                      : 2
@@ -706,8 +706,8 @@ Slice Logic Distribution:
    Number of unique control sets:        72
 
 IO Utilization: 
- Number of IOs:                          12
- Number of bonded IOBs:                  12  out of    396     3%  
+ Number of IOs:                          10
+ Number of bonded IOBs:                  10  out of    396     2%  
 
 Specific Feature Utilization:
  Number of Block RAM/FIFO:                4  out of    268     1%  
@@ -739,9 +739,9 @@ CommState[1]_PWR_66_o_Mux_80_o(CommState[1]_PWR_66_o_Mux_80_o1:O)      | NONE(*)
 CtrlState[1]_GND_77_o_Mux_93_o(Mmux_CtrlState[1]_GND_77_o_Mux_93_o11:O)| NONE(*)(nxt_CTRLState_1) | 2     |
 CommState[1]_PWR_67_o_Mux_82_o(Mmux_CommState[1]_PWR_67_o_Mux_82_o11:O)| NONE(*)(nxtState_1)      | 2     |
 MASTER_CLK_P                                                           | DCM_SP:CLKFX             | 421   |
-Mram__n0283(Mram__n028312:O)                                           | NONE(*)(dc_cmd_31)       | 1     |
-Mram__n02831(Mram__n0283111:O)                                         | NONE(*)(rd_req)          | 1     |
-Mram__n02833(Mram__n028331:O)                                          | NONE(*)(dc_cmd_valid)    | 1     |
+Mram__n0281(Mram__n028112:O)                                           | NONE(*)(dc_cmd_31)       | 1     |
+Mram__n02811(Mram__n0281111:O)                                         | NONE(*)(rd_req)          | 1     |
+Mram__n02813(Mram__n028131:O)                                          | NONE(*)(dc_cmd_valid)    | 1     |
 MASTER_CLK_P                                                           | DCM_SP:CLKFX+DCM_SP:CLKFX| 138   |
 -----------------------------------------------------------------------+--------------------------+-------+
 (*) These 6 clock signal(s) are generated by combinatorial logic,
@@ -759,7 +759,7 @@ Speed Grade: -3
 
    Minimum period: 3.489ns (Maximum Frequency: 286.644MHz)
    Minimum input arrival time before clock: 1.801ns
-   Maximum output required time after clock: 3.791ns
+   Maximum output required time after clock: 3.648ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -769,7 +769,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'MASTER_CLK_P'
   Clock period: 3.489ns (frequency: 286.644MHz)
-  Total number of paths / destination ports: 3418 / 1304
+  Total number of paths / destination ports: 3420 / 1304
 -------------------------------------------------------------------------
 Delay:               3.489ns (Levels of Logic = 4)
   Source:            comm_process/U_SerialInterfaceOut/U_SerializationFifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i (FF)
@@ -831,25 +831,6 @@ Offset:              3.648ns (Levels of Logic = 1)
                                        (84.1% logic, 15.9% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'MASTER_CLK_P'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              3.791ns (Levels of Logic = 1)
-  Source:            comm_process/U_ByteLink/r_aligned (FF)
-  Destination:       TRGLINK_SYNC (PAD)
-  Source Clock:      MASTER_CLK_P rising 0.2X
-
-  Data Path: comm_process/U_ByteLink/r_aligned to TRGLINK_SYNC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDR:C->Q              7   0.447   0.773  comm_process/U_ByteLink/r_aligned (comm_process/U_ByteLink/r_aligned)
-     OBUF:I->O                 2.571          TRGLINK_SYNC_OBUF (TRGLINK_SYNC)
-    ----------------------------------------
-    Total                      3.791ns (3.018ns logic, 0.773ns route)
-                                       (79.6% logic, 20.4% route)
-
-=========================================================================
 
 Cross Clock Domains Report:
 --------------------------
@@ -886,12 +867,12 @@ Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 CommState[1]_PWR_67_o_Mux_82_o|         |    1.179|         |         |
 CtrlState[1]_GND_77_o_Mux_93_o|         |    1.179|         |         |
 MASTER_CLK_P                  |    5.397|         |    1.026|         |
-Mram__n0283                   |         |    1.970|         |         |
-Mram__n02831                  |         |    2.828|         |         |
-Mram__n02833                  |         |    2.934|         |         |
+Mram__n0281                   |         |    1.970|         |         |
+Mram__n02811                  |         |    2.811|         |         |
+Mram__n02813                  |         |    3.076|         |         |
 ------------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock Mram__n0283
+Clock to Setup on destination clock Mram__n0281
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
@@ -899,7 +880,7 @@ Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 MASTER_CLK_P   |         |         |    1.621|         |
 ---------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock Mram__n02831
+Clock to Setup on destination clock Mram__n02811
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
@@ -907,7 +888,7 @@ Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 MASTER_CLK_P   |         |         |    1.621|         |
 ---------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock Mram__n02833
+Clock to Setup on destination clock Mram__n02813
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
@@ -919,13 +900,13 @@ MASTER_CLK_P   |         |         |    1.621|         |
 
 
 Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 8.23 secs
+Total CPU time to Xst completion: 8.26 secs
  
 --> 
 
-Total memory usage is 4508492 kilobytes
+Total memory usage is 4508496 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   61 (   0 filtered)
-Number of infos    :   63 (   0 filtered)
+Number of infos    :   64 (   0 filtered)
 

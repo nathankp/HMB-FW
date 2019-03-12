@@ -34,11 +34,11 @@ entity SCROD_DC_COMM is
 			 DC_NO_GO			: IN STD_LOGIC_VECTOR(4 downto 0);
 			 OOPS_RESET			: IN STD_LOGIC;
 			 --incoming/outgoing signals from daughter-cards 
-			SC_DC_RX       : OUT STD_LOGIC_VECTOR(3 DOWNTO 0); --OUTDATED
-			SC_DC_DATA     : OUT  STD_LOGIC_VECTOR(3 DOWNTO 0);   --OUTDATED
-			SC_DC_CLK      : OUT STD_LOGIC_VECTOR(3 DOWNTO 0); --OUTDATED
-			DC_SC_TX      : IN STD_LOGIC_VECTOR(3 DOWNTO 0); --OUTDATED
-			DC_SC_DATA     : IN STD_LOGIC_VECTOR(3 DOWNTO 0); --OUTDATED
+			SC_DC_RX       : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+			SC_DC_DATA     : OUT  STD_LOGIC_VECTOR(3 DOWNTO 0);   
+			SC_DC_CLK      : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+			DC_SC_TX      : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+			DC_SC_DATA     : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
 
 
 			 --internal control registers
@@ -78,7 +78,7 @@ entity SCROD_DC_COMM is
 			 mgtclk1n         : IN STD_LOGIC);
 end SCROD_DC_COMM;
 
-  architecture Behavioral of SCROD_DC_COMM is
+architecture Behavioral of SCROD_DC_COMM is
 --declearing internal signals for scrod and pc state machine
 type eth_tx_st is (idle, 
 						 dc_wait_reset, 
@@ -268,12 +268,12 @@ end if;
 end process;
 
 dc_rx_data <= 	internal_din(0) when dc_num = x"1" else
-				   internal_din(1) when dc_num = x"2" else
-				   internal_din(2) when dc_num = x"3" else
-				   internal_din(3) when dc_num = x"4" else
-				   '0';
+				internal_din(1) when dc_num = x"2" else
+				internal_din(2) when dc_num = x"3" else
+				internal_din(3) when dc_num = x"4" else
+				'0';
 			
-dc_rx <= 	DC_SC_TX(0) when dc_num = x"1" else
+dc_rx <= 		DC_SC_TX(0) when dc_num = x"1" else
 				DC_SC_TX(1) when dc_num = x"2" else
 				DC_SC_TX(2) when dc_num = x"3" else
 				DC_SC_TX(3) when dc_num = x"4" else
@@ -344,7 +344,7 @@ DC_REG_FIFO_W1R8 : entity work.CMD_FIFO_w1r8
 
 ----looking for trigger signal from daughter cards
 --top_trigger <= '1' when top_fifo_din(27 downto 0) = x"00000CD" else '0';
---bot_trigger <= '1' when bot_fifo_din(27 downto 0) = x"00000CD" else '0';dc_
+--bot_trigger <= '1' when bot_fifo_din(27 downto 0) = x"00000CD" else '0';
 
 dc_fifo_reset <= '1' when dc_fifo_din(27 downto 0) = x"ABABABA" else '0';
 
@@ -634,7 +634,6 @@ case scrod_pc_st is
 			scrod_pc_st  <= fifo_rst;
 		elsif sc2pc_trig = '1' then--good event trigger send to pc for readout
 			sc2pc_t_hold <= '1';
-
 			reg_fifo_rst <= '1';
 			scrod_pc_st  <= fifo_rst;
 		end if;

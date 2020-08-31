@@ -1,19 +1,18 @@
-Release 14.7 ngdbuild P.20131013 (nt64)
+Release 14.7 ngdbuild P.20160913 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe -filter
+Command Line: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -filter
 iseconfig/filter.filter -intstyle ise -dd _ngo -sd
 ../SCROD_A5_RJ45/ipcore_dir/STATE_FIFO -sd
 ../SCROD_A5_RJ45/ipcore_dir/CMD_FIFO_w1r8 -sd
 remoteFiles/SCROD_ETHERNET_V3/ExampleProject/ise/coregen -sd ipcore_dir -sd
-../../../QBLink/QBlink/cores -sd ../../../QBLink/QBlink/ipcore_dir -sd
-../../../SCROD_ETHERNET_V3/ExampleProject/ise/coregen -sd
+../../../../QBLink/QBlink/ipcore_dir -sd ../../../../QBLink/QBlink/cores -sd
 ../../mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/hodo_dc_v1/cores -nt timestamp -uc
 HMB_SciFi_SCROD.ucf -p xc6slx150t-fgg676-3 SCRODQB_Top_cs.ngc SCRODQB_Top.ngd
 
 Reading NGO file
-"C:/Users/Kevin/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/SCRODQB_
-Top_cs.ngc" ...
+"/home/ise/Desktop/HMB-FW/EIC-Beamtest-FW/SCROD_A5_RJ45/SCROD_Rev1/SCRODQB_Top_c
+s.ngc" ...
 INFO:NgdBuild:1317 - Using core chipscope_ila_v1 requires a ChipScopePro
    license.  The following blocks are instances of core chipscope_ila_v1:
 	/SCRODQB_Top/U_ila_pro_0
@@ -53,6 +52,72 @@ WARNING:ConstraintSystem - TNM : D_CLK was distributed to a DCM but new TNM
 Done...
 
 Checking expanded design ...
+ERROR:NgdBuild:604 - logical block
+   'U_S6EthTop/U_Eth1000BaseXCore/U_Mux16to8/U_Fifo18x16' with type 'fifo18x16'
+   could not be resolved. A pin name misspelling can cause this, a missing edif
+   or ngc file, case mismatch between the block name and the edif or ngc file
+   name, or the misspelling of a type name. Symbol 'fifo18x16' is not supported
+   in target 'spartan6'.
+ERROR:NgdBuild:604 - logical block
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_EthRx/U_EthFrameRx/U_FrameBuffer'
+   with type 'bram8x3000' could not be resolved. A pin name misspelling can
+   cause this, a missing edif or ngc file, case mismatch between the block name
+   and the edif or ngc file name, or the misspelling of a type name. Symbol
+   'bram8x3000' is not supported in target 'spartan6'.
+ERROR:NgdBuild:604 - logical block
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_EthTx/U_MacTx/U_DataBuffer' with
+   type 'fifo8x64' could not be resolved. A pin name misspelling can cause this,
+   a missing edif or ngc file, case mismatch between the block name and the edif
+   or ngc file name, or the misspelling of a type name. Symbol 'fifo8x64' is not
+   supported in target 'spartan6'.
+ERROR:NgdBuild:604 - logical block
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_IPv4Arbiter/U_FifoDist8x16' with
+   type 'fifoDist8x16' could not be resolved. A pin name misspelling can cause
+   this, a missing edif or ngc file, case mismatch between the block name and
+   the edif or ngc file name, or the misspelling of a type name. Symbol
+   'fifoDist8x16' is not supported in target 'spartan6'.
+ERROR:NgdBuild:604 - logical block
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/G_UdpTxInstance[0].U_UdpBufferTx/U_U
+   dp64KFifo' with type 'udp64kfifo' could not be resolved. A pin name
+   misspelling can cause this, a missing edif or ngc file, case mismatch between
+   the block name and the edif or ngc file name, or the misspelling of a type
+   name. Symbol 'udp64kfifo' is not supported in target 'spartan6'.
+ERROR:NgdBuild:604 - logical block
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/G_UdpTxInstance[0].U_UdpBufferTx/U_U
+   dpSizeFifo' with type 'fifo16x64' could not be resolved. A pin name
+   misspelling can cause this, a missing edif or ngc file, case mismatch between
+   the block name and the edif or ngc file name, or the misspelling of a type
+   name. Symbol 'fifo16x64' is not supported in target 'spartan6'.
+ERROR:NgdBuild:604 - logical block
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/G_UdpTxInstance[1].U_UdpBufferTx/U_U
+   dp64KFifo' with type 'udp64kfifo' could not be resolved. A pin name
+   misspelling can cause this, a missing edif or ngc file, case mismatch between
+   the block name and the edif or ngc file name, or the misspelling of a type
+   name. Symbol 'udp64kfifo' is not supported in target 'spartan6'.
+ERROR:NgdBuild:604 - logical block
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/G_UdpTxInstance[1].U_UdpBufferTx/U_U
+   dpSizeFifo' with type 'fifo16x64' could not be resolved. A pin name
+   misspelling can cause this, a missing edif or ngc file, case mismatch between
+   the block name and the edif or ngc file name, or the misspelling of a type
+   name. Symbol 'fifo16x64' is not supported in target 'spartan6'.
+ERROR:NgdBuild:604 - logical block
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/G_Rx[0].U_UdpBufferRx/U_UdpRxAxiFifo
+   ' with type 'fifo32x512RxAxi' could not be resolved. A pin name misspelling
+   can cause this, a missing edif or ngc file, case mismatch between the block
+   name and the edif or ngc file name, or the misspelling of a type name. Symbol
+   'fifo32x512RxAxi' is not supported in target 'spartan6'.
+ERROR:NgdBuild:604 - logical block
+   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/G_Rx[1].U_UdpBufferRx/U_UdpRxAxiFifo
+   ' with type 'fifo32x512RxAxi' could not be resolved. A pin name misspelling
+   can cause this, a missing edif or ngc file, case mismatch between the block
+   name and the edif or ngc file name, or the misspelling of a type name. Symbol
+   'fifo32x512RxAxi' is not supported in target 'spartan6'.
+ERROR:NgdBuild:604 - logical block
+   'U_S6EthTop/U_Eth1000BaseXCore/U_Mux8to16/U_Fifo18x16' with type 'fifo18x16'
+   could not be resolved. A pin name misspelling can cause this, a missing edif
+   or ngc file, case mismatch between the block name and the edif or ngc file
+   name, or the misspelling of a type name. Symbol 'fifo18x16' is not supported
+   in target 'spartan6'.
 WARNING:NgdBuild:452 - logical net 'U_S6EthTop/userTxDataReady<0>' has no driver
 WARNING:NgdBuild:452 - logical net 'U_S6EthTop/led<1>' has no driver
 WARNING:NgdBuild:452 - logical net 'U_S6EthTop/led<0>' has no driver
@@ -273,13 +338,14 @@ Partition Implementation Status
 -------------------------------
 
 NGDBUILD Design Results Summary:
-  Number of errors:     0
+  Number of errors:    11
   Number of warnings: 110
 
-Total memory usage is 4545632 kilobytes
+Total memory usage is 570832 kilobytes
 
-Writing NGD file "SCRODQB_Top.ngd" ...
-Total REAL time to NGDBUILD completion:  13 sec
-Total CPU time to NGDBUILD completion:   11 sec
+Total REAL time to NGDBUILD completion:  28 sec
+Total CPU time to NGDBUILD completion:   25 sec
+
+One or more errors were found during NGDBUILD.  No NGD file will be written.
 
 Writing NGDBUILD log file "SCRODQB_Top.bld"...

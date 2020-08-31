@@ -1,3 +1,4 @@
+#!/bin/sh
 # (c) Copyright 2009 - 2010 Xilinx, Inc. All rights reserved.
 # 
 # This file contains confidential and proprietary information
@@ -44,29 +45,23 @@
 # THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
 # PART OF THIS FILE AT ALL TIMES.
 #--------------------------------------------------------------------------------
-
-vlib work 
-vmap work work 
+rm -rf simv* csrc DVEfiles AN.DB
 
 echo "Compiling Core VHDL UNISIM/Behavioral model"
-vcom  -work work ../../implement/results/routed.vhd
+vhdlan  ../../implement/results/routed.vhd
 
 echo "Compiling Test Bench Files"
-vcom -work work ../udp64kfifo_pkg.vhd  
-vcom -work work ../udp64kfifo_rng.vhd 
-vcom -work work ../udp64kfifo_dgen.vhd
-vcom -work work ../udp64kfifo_dverif.vhd
-vcom -work work ../udp64kfifo_pctrl.vhd 
-vcom -work work ../udp64kfifo_synth.vhd 
-vcom -work work ../udp64kfifo_tb.vhd
+vhdlan   ../udp64kfifo_pkg.vhd
+vhdlan   ../udp64kfifo_rng.vhd
+vhdlan   ../udp64kfifo_dgen.vhd
+vhdlan   ../udp64kfifo_dverif.vhd
+vhdlan   ../udp64kfifo_pctrl.vhd
+vhdlan   ../udp64kfifo_synth.vhd
+vhdlan   ../udp64kfifo_tb.vhd
 
-vsim  -t ps -voptargs="+acc" +transport_int_delays -L simprim -sdfmax /udp64kfifo_tb/udp64kfifo_synth_inst/udp64kfifo_inst=../../implement/results/routed.sdf work.udp64kfifo_tb
+echo "Elaborating Design"
+vcs -time_res 1ps +neg_tchk +vcs+lic+wait -debug udp64kfifo_tb
 
-add log -r /*
-do wave_mti.do
-#Ignore integer warnings at time 0
-set StdArithNoWarnings 1
-run 0
-set StdArithNoWarnings 0
-
-run -all
+echo "Simulating Design"
+./simv -ucli -i ucli_commands.key
+dve -session vcs_session.tcl

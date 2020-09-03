@@ -6,7 +6,7 @@ iseconfig/filter.filter -intstyle ise -dd _ngo -sd
 ../SCROD_A5_RJ45/ipcore_dir/STATE_FIFO -sd
 ../SCROD_A5_RJ45/ipcore_dir/CMD_FIFO_w1r8 -sd
 remoteFiles/SCROD_ETHERNET_V3/ExampleProject/ise/coregen -sd ipcore_dir -sd
-../../../../QBLink/QBlink/ipcore_dir -sd ../../../../QBLink/QBlink/cores -sd
+../../../../QBLink/QBlink/cores -sd ../../../../QBLink/QBlink/ipcore_dir -sd
 ../../mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/hodo_dc_v1/cores -nt timestamp -uc
 HMB_SciFi_SCROD.ucf -p xc6slx150t-fgg676-3 SCRODQB_Top_cs.ngc SCRODQB_Top.ngd
 
@@ -37,12 +37,6 @@ WARNING:ConstraintSystem:56 - Constraint <TIMESPEC "TS_DATA_CLK" = PERIOD
    "DC_CLK_P<0>" 40 ns HIGH 50 %;> [HMB_SciFi_SCROD.ucf(28)]: Unable to find an
    active 'TNM' or 'TimeGrp' constraint named 'DC_CLK_P<0>'.
 
-WARNING:ConstraintSystem - Constraint <NET "gtClkP" TNM_NET="gtClkP";>
-   [HMB_SciFi_SCROD.ucf(38)] was not distributed to the output pin GTPCLKOUT1<0>
-   of block gtpa1_dual_i because the signal path to this output pin depends upon
-   block attribute settings. Constraint distribution does not support attribute
-   dependent distribution.
-
 WARNING:ConstraintSystem - TNM : D_CLK was distributed to a DCM but new TNM
    constraints were not derived. This TNM is used in the following user groups
    or specifications:
@@ -52,283 +46,6 @@ WARNING:ConstraintSystem - TNM : D_CLK was distributed to a DCM but new TNM
 Done...
 
 Checking expanded design ...
-ERROR:NgdBuild:604 - logical block
-   'U_S6EthTop/U_Eth1000BaseXCore/U_Mux16to8/U_Fifo18x16' with type 'fifo18x16'
-   could not be resolved. A pin name misspelling can cause this, a missing edif
-   or ngc file, case mismatch between the block name and the edif or ngc file
-   name, or the misspelling of a type name. Symbol 'fifo18x16' is not supported
-   in target 'spartan6'.
-ERROR:NgdBuild:604 - logical block
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_EthRx/U_EthFrameRx/U_FrameBuffer'
-   with type 'bram8x3000' could not be resolved. A pin name misspelling can
-   cause this, a missing edif or ngc file, case mismatch between the block name
-   and the edif or ngc file name, or the misspelling of a type name. Symbol
-   'bram8x3000' is not supported in target 'spartan6'.
-ERROR:NgdBuild:604 - logical block
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_EthTx/U_MacTx/U_DataBuffer' with
-   type 'fifo8x64' could not be resolved. A pin name misspelling can cause this,
-   a missing edif or ngc file, case mismatch between the block name and the edif
-   or ngc file name, or the misspelling of a type name. Symbol 'fifo8x64' is not
-   supported in target 'spartan6'.
-ERROR:NgdBuild:604 - logical block
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/U_IPv4Arbiter/U_FifoDist8x16' with
-   type 'fifoDist8x16' could not be resolved. A pin name misspelling can cause
-   this, a missing edif or ngc file, case mismatch between the block name and
-   the edif or ngc file name, or the misspelling of a type name. Symbol
-   'fifoDist8x16' is not supported in target 'spartan6'.
-ERROR:NgdBuild:604 - logical block
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/G_UdpTxInstance[0].U_UdpBufferTx/U_U
-   dp64KFifo' with type 'udp64kfifo' could not be resolved. A pin name
-   misspelling can cause this, a missing edif or ngc file, case mismatch between
-   the block name and the edif or ngc file name, or the misspelling of a type
-   name. Symbol 'udp64kfifo' is not supported in target 'spartan6'.
-ERROR:NgdBuild:604 - logical block
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/G_UdpTxInstance[0].U_UdpBufferTx/U_U
-   dpSizeFifo' with type 'fifo16x64' could not be resolved. A pin name
-   misspelling can cause this, a missing edif or ngc file, case mismatch between
-   the block name and the edif or ngc file name, or the misspelling of a type
-   name. Symbol 'fifo16x64' is not supported in target 'spartan6'.
-ERROR:NgdBuild:604 - logical block
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/G_UdpTxInstance[1].U_UdpBufferTx/U_U
-   dp64KFifo' with type 'udp64kfifo' could not be resolved. A pin name
-   misspelling can cause this, a missing edif or ngc file, case mismatch between
-   the block name and the edif or ngc file name, or the misspelling of a type
-   name. Symbol 'udp64kfifo' is not supported in target 'spartan6'.
-ERROR:NgdBuild:604 - logical block
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/G_UdpTxInstance[1].U_UdpBufferTx/U_U
-   dpSizeFifo' with type 'fifo16x64' could not be resolved. A pin name
-   misspelling can cause this, a missing edif or ngc file, case mismatch between
-   the block name and the edif or ngc file name, or the misspelling of a type
-   name. Symbol 'fifo16x64' is not supported in target 'spartan6'.
-ERROR:NgdBuild:604 - logical block
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/G_Rx[0].U_UdpBufferRx/U_UdpRxAxiFifo
-   ' with type 'fifo32x512RxAxi' could not be resolved. A pin name misspelling
-   can cause this, a missing edif or ngc file, case mismatch between the block
-   name and the edif or ngc file name, or the misspelling of a type name. Symbol
-   'fifo32x512RxAxi' is not supported in target 'spartan6'.
-ERROR:NgdBuild:604 - logical block
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/G_Rx[1].U_UdpBufferRx/U_UdpRxAxiFifo
-   ' with type 'fifo32x512RxAxi' could not be resolved. A pin name misspelling
-   can cause this, a missing edif or ngc file, case mismatch between the block
-   name and the edif or ngc file name, or the misspelling of a type name. Symbol
-   'fifo32x512RxAxi' is not supported in target 'spartan6'.
-ERROR:NgdBuild:604 - logical block
-   'U_S6EthTop/U_Eth1000BaseXCore/U_Mux8to16/U_Fifo18x16' with type 'fifo18x16'
-   could not be resolved. A pin name misspelling can cause this, a missing edif
-   or ngc file, case mismatch between the block name and the edif or ngc file
-   name, or the misspelling of a type name. Symbol 'fifo18x16' is not supported
-   in target 'spartan6'.
-WARNING:NgdBuild:452 - logical net 'U_S6EthTop/userTxDataReady<0>' has no driver
-WARNING:NgdBuild:452 - logical net 'U_S6EthTop/led<1>' has no driver
-WARNING:NgdBuild:452 - logical net 'U_S6EthTop/led<0>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<5><7>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<5><6>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<5><5>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<5><4>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<5><3>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<5><2>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<5><1>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<5><0>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<4><7>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<4><6>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<4><5>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<4><4>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<4><3>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<4><2>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<4><1>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<4><0>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<3><7>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<3><6>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<3><5>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<3><4>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<3><3>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<3><2>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<3><1>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<3><0>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<2><7>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<2><6>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<2><5>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<2><4>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<2><3>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<2><2>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<2><1>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<2><0>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<1><7>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<1><6>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<1><5>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<1><4>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<1><3>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<1><2>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<1><1>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<1><0>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<0><7>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<0><6>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<0><5>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<0><4>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<0><3>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<0><2>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<0><1>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/arpRxTargetMac<0><0>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/udpTxAck<1>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/udpTxAck<0>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxLength<15>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxLength<14>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxLength<13>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxLength<12>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxLength<11>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxLength<10>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxLength<9>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxLength<8>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxLength<7>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxLength<6>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxLength<5>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxLength<4>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxLength<3>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxLength<2>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxLength<1>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxLength<0>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxId<15>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxId<14>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxId<13>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxId<12>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxId<11>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxId<10>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxId<9>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxId<8>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxId<7>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxId<6>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxId<5>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxId<4>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxId<3>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxId<2>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxId<1>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxId<0>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxFragOffset<12>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxFragOffset<11>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxFragOffset<10>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxFragOffset<9>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxFragOffset<8>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxFragOffset<7>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxFragOffset<6>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxFragOffset<5>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxFragOffset<4>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxFragOffset<3>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxFragOffset<2>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxFragOffset<1>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxFragOffset<0>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxTtl<7>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxTtl<6>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxTtl<5>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxTtl<4>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxTtl<3>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxTtl<2>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxTtl<1>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxTtl<0>' has no driver
-WARNING:NgdBuild:452 - logical net
-   'U_S6EthTop/U_Eth1000BaseXCore/U_EthCore/ipRxMoreFragments' has no driver
 
 Partition Implementation Status
 -------------------------------
@@ -338,14 +55,13 @@ Partition Implementation Status
 -------------------------------
 
 NGDBUILD Design Results Summary:
-  Number of errors:    11
-  Number of warnings: 110
+  Number of errors:     0
+  Number of warnings:   2
 
-Total memory usage is 570832 kilobytes
+Total memory usage is 491008 kilobytes
 
-Total REAL time to NGDBUILD completion:  28 sec
-Total CPU time to NGDBUILD completion:   25 sec
-
-One or more errors were found during NGDBUILD.  No NGD file will be written.
+Writing NGD file "SCRODQB_Top.ngd" ...
+Total REAL time to NGDBUILD completion:  58 sec
+Total CPU time to NGDBUILD completion:   54 sec
 
 Writing NGDBUILD log file "SCRODQB_Top.bld"...

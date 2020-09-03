@@ -148,9 +148,14 @@ signal internal_data_clk : sl; -- QBLink timing clock
 --HW testing signals--
 constant correctData : slv(31 downto 0) := x"DEADBEEF"; --USER: set to register value you want to write to DC 
 signal sync : sl := '0'; -- synchronize timestamp counters on all DCs
-attribute keep_hierarchy: boolean;
-attribute keep_hierarchy of Behavioral: architecture is TRUE;
-
+signal cmd_target_type : sl := '0';
+--attribute keep_hierarchy: boolean;
+--attribute keep_hierarchy of Behavioral: architecture is TRUE;
+attribute mark_debug : string;
+attribute mark_debug of CommandIntState : signal is "true";
+attribute mark_debug of cmd_target_type : signal is "true";
+attribute mark_debug of trigLinkSynced : signal is "true";
+attribute mark_debug of serialClkLocked : signal is "true";
 begin
 
 
@@ -285,6 +290,7 @@ U_S6EthTop : entity work.S6EthTop
          regReq      => regReq,
          regOp       => regOp,
          regAck      => regAck,
+			targetType => cmd_target_type,
 			cmd_int_state => CommandIntState 
       );
 		

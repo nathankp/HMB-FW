@@ -134,7 +134,7 @@ end GENERATE Gen_QBLink;
 
       wait for DATA_CLK_period*10;
 		QB_RST <= (others=>'0');
-      wait until TRIG_LINK_SYNC = "1111";
+      wait until TRIG_LINK_SYNC = "XXX1";
 		DC_CMD <= x"DEADBEEF"; --command to DC1 Begin
 		CMD_VALID <= "0001";
 		RESP_REQ <= (others => '0');

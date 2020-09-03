@@ -1,7 +1,7 @@
 ##############################################################
 #
 # Xilinx Core Generator version 14.7
-# Date: Mon Jun 29 22:21:11 2020
+# Date: Thu Sep  3 12:12:28 2020
 #
 ##############################################################
 #
@@ -92,9 +92,9 @@ CSET match_type_2=basic_with_edges
 CSET match_type_3=basic_with_edges
 CSET match_type_4=basic_with_edges
 CSET match_type_5=basic_with_edges
-CSET match_type_6=basic
-CSET match_type_7=basic
-CSET match_type_8=basic
+CSET match_type_6=basic_with_edges
+CSET match_type_7=basic_with_edges
+CSET match_type_8=basic_with_edges
 CSET match_type_9=basic
 CSET match_units_1=1
 CSET match_units_10=1
@@ -113,10 +113,10 @@ CSET match_units_7=1
 CSET match_units_8=1
 CSET match_units_9=1
 CSET max_sequence_levels=16
-CSET number_of_trigger_ports=5
+CSET number_of_trigger_ports=8
 CSET sample_data_depth=1024
 CSET sample_on=Rising
-CSET trigger_port_width_1=32
+CSET trigger_port_width_1=5
 CSET trigger_port_width_10=1
 CSET trigger_port_width_11=1
 CSET trigger_port_width_12=1
@@ -124,18 +124,18 @@ CSET trigger_port_width_13=1
 CSET trigger_port_width_14=1
 CSET trigger_port_width_15=1
 CSET trigger_port_width_16=1
-CSET trigger_port_width_2=32
-CSET trigger_port_width_3=4
-CSET trigger_port_width_4=4
-CSET trigger_port_width_5=1
-CSET trigger_port_width_6=1
+CSET trigger_port_width_2=1
+CSET trigger_port_width_3=1
+CSET trigger_port_width_4=1
+CSET trigger_port_width_5=8
+CSET trigger_port_width_6=8
 CSET trigger_port_width_7=1
-CSET trigger_port_width_8=1
+CSET trigger_port_width_8=10
 CSET trigger_port_width_9=1
 CSET use_rpms=true
 # END Parameters
 # BEGIN Extra information
-MISC pkg_timestamp=2013-10-13T14:13:15Z
+MISC pkg_timestamp=2016-11-22T05:21:57Z
 # END Extra information
 GENERATE
-# CRC: a12ad0b7
+# CRC: aef8f29d

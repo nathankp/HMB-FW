@@ -2,27 +2,27 @@ Command line:
    DC_commTB_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  58113
+     -socket  49899
 
-Thu Sep  3 09:43:31 2020
+Thu Sep  3 13:45:04 2020
 
 
- Elaboration Time: 0.42 sec
+ Elaboration Time: 1.06 sec
 
- Current Memory Usage: 275.538 Meg
+ Current Memory Usage: 275.595 Meg
 
- Total Signals          : 21364
- Total Nets             : 55033
- Total Signal Drivers   : 10067
+ Total Signals          : 21380
+ Total Nets             : 55105
+ Total Signal Drivers   : 10083
  Total Blocks           : 1135
  Total Primitive Blocks : 661
  Total Processes        : 5107
  Total Traceable Variables  : 11343
- Total Scalar Nets and Variables : 75242
+ Total Scalar Nets and Variables : 75314
 
- Total Simulation Time: 64.5 sec
+ Total Simulation Time: 4.11 sec
 
- Current Memory Usage: 356.651 Meg
+ Current Memory Usage: 353.329 Meg
 
-Thu Sep  3 12:00:19 2020
+Thu Sep  3 15:48:22 2020
 

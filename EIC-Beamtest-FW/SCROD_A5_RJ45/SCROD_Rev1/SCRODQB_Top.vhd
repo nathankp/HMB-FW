@@ -126,6 +126,7 @@ signal ethSync      : sl;
 	signal serialClkLocked : slv(NUM_DCs downto 0); --QBlink status flag: SCROD and DC data clocks are synced (established before trigger link)
 	signal dc_cmd		 : slv(31 downto 0); --DC register command, input data to QBLink write-operation input FIFO
 	signal QBrst	: slv(NUM_DCs downto 0) := (others =>'0'); --QBLink reset 
+	signal QBrst_test : slv(NUM_DCs downto 0) := (others => '0');
 	signal DC_data : slv(31 downto 0);
 	signal dc_dataValid : slv(NUM_DCs downto 0); -- QBLink output: readout valid flag 
 	signal tx_dc		 : slv(NUM_DCs downto 0); --transmitted serial data bit 
@@ -156,6 +157,7 @@ attribute mark_debug of CommandIntState : signal is "true";
 attribute mark_debug of cmd_target_type : signal is "true";
 attribute mark_debug of trigLinkSynced : signal is "true";
 attribute mark_debug of serialClkLocked : signal is "true";
+attribute mark_debug of QBRst : signal is "true";
 begin
 
 
@@ -176,9 +178,94 @@ DC_reset : process(internal_data_clk)
 begin 
 	IF rising_edge(internal_data_clk) THEN
 		sync <= CtrlRegister(2)(8);
-		QBrst <= CtrlRegister(2)(NUM_DCs downto 0);
+	QBrst <= CtrlRegister(2)(NUM_DCs downto 0);
 	END IF;
 end process;
+
+
+---- QBRst_process: process(internal_data_clk, trigLinkSynced) 
+----  variable counter : integer range 0 to 20 :=0;
+----  begin
+----   FOR I in 0 to Num_DCs LOOP
+----		If trigLinkSynced(I) = '0' and counter < 26 then
+----			If rising_edge(internal_data_clk) then
+----				counter := counter + 1;
+----			end if;
+----		elsif trigLinkSynced(I) = '0' and counter = 26 then
+----			counter := 0;
+----			QBRst(I) <= not QBRst(I);
+----		else
+----			QBrst(I) <= '0';
+----			counter := 0;
+----		end if;
+----	end loop;
+----end process;
+--
+-- QBRst_process1: process(internal_data_clk, trigLinkSynced(0)) 
+--  variable counter : integer range 0 to 20 :=0;
+--  begin
+--		If trigLinkSynced(0) = '0' and counter < 26 then
+--			If rising_edge(internal_data_clk) then
+--				counter := counter + 1;
+--			end if;
+--		elsif trigLinkSynced(0) = '0' and counter = 26 then
+--			counter := 0;
+--			QBRst(0) <= not QBRst(0);
+--		else
+--			QBrst(0) <= '0';
+--			counter := 0;
+--		end if;
+--end process;
+--
+--QBRst_process2: process(internal_data_clk, trigLinkSynced(1)) 
+--  variable counter : integer range 0 to 20 :=0;
+--  begin
+--		If trigLinkSynced(1) = '0' and counter < 26 then
+--			If rising_edge(internal_data_clk) then
+--				counter := counter + 1;
+--			end if;
+--		elsif trigLinkSynced(1) = '0' and counter = 26 then
+--			counter := 0;
+--			QBRst(1) <= not QBRst(1);
+--		else
+--			QBrst(1) <= '0';
+--			counter := 0;
+--		end if;
+--end process;
+--
+--QBRst_process3: process(internal_data_clk, trigLinkSynced(2)) 
+--  variable counter : integer range 0 to 20 :=0;
+--  begin
+--		If trigLinkSynced(2) = '0' and counter < 26 then
+--			If rising_edge(internal_data_clk) then
+--				counter := counter + 1;
+--			end if;
+--		elsif trigLinkSynced(2) = '0' and counter = 26 then
+--			counter := 0;
+--			QBRst(2) <= not QBRst(2);
+--		else
+--			QBrst(2) <= '0';
+--			counter := 0;
+--		end if;
+--end process;
+--
+--QBRst_process4: process(internal_data_clk, trigLinkSynced(3)) 
+--  variable counter : integer range 0 to 20 :=0;
+--  begin
+--		If trigLinkSynced(3) = '0' and counter < 26 then
+--			If rising_edge(internal_data_clk) then
+--				counter := counter + 1;
+--			end if;
+--		elsif trigLinkSynced(3) = '0' and counter = 26 then
+--			counter := 0;
+--			QBRst(3) <= not QBRst(3);
+--		else
+--			QBrst(3) <= '0';
+--			counter := 0;
+--		end if;
+--end process;
+
+
 --
 -----------------------------------------------------------------
 ----------------I/O Buffers--------------------------------------

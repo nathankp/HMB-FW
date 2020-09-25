@@ -47,7 +47,7 @@ entity DC_Comm is
 				--to be added: TRIG : slv(31 downto 0);
 				--            and TrigValid
            RESP_VALID : out  slv(num_DC downto 0);
-			  QB_RST : in slv(num_DC downto 0);
+			  QB_RST : in slv(num_DC downto 0) := (others => '0');
 			  TrigLogicRst : in sl;
 			  SERIAL_CLK_LCK : out slv(num_DC downto 0);
 			  TRIG_LINK_SYNC : out slv(num_DC downto 0);

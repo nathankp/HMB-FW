@@ -20,12 +20,6 @@
       <association xil_pn:name="Implementation" xil_pn:seqID="55"/>
     </file>
     <file xil_pn:name="../../../../QBLink/source/BMD trim dac calc .txt" xil_pn:type="FILE_USERDOC"/>
-    <file xil_pn:name="SCRODQB_TB.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="49"/>
-      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="49"/>
-      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="49"/>
-    </file>
     <file xil_pn:name="../../mRICH_hodo_DC_V1/HMB_QBLink_proto/HODO_DC_QBTOP.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
@@ -93,7 +87,7 @@
       <association xil_pn:name="Implementation" xil_pn:seqID="27"/>
     </file>
     <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/firmware-ethernet/Ethernet/General/rtl/GigabitEthPkg.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="14"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="21"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="2"/>
     </file>
     <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/firmware-ethernet/Ethernet/General/rtl/IpV4Arbiter.vhd" xil_pn:type="FILE_VHDL">
@@ -209,7 +203,7 @@
       <association xil_pn:name="Implementation" xil_pn:seqID="12"/>
     </file>
     <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/firmware-ethernet/Ethernet/1000BASE-X/rtl/Eth1000BaseXPkg.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="15"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="22"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="3"/>
     </file>
     <file xil_pn:name="remoteFiles/SCROD_ETHERNET_V3/firmware-ethernet/firmware-ethernet/Ethernet/1000BASE-X/rtl/Eth1000BaseXRxSync.vhd" xil_pn:type="FILE_VHDL">
@@ -261,7 +255,7 @@
       <association xil_pn:name="Implementation" xil_pn:seqID="1"/>
     </file>
     <file xil_pn:name="BMD_definitions.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="13"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="19"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="49"/>
     </file>
     <file xil_pn:name="BMD_autoinit_definitions.vhd" xil_pn:type="FILE_VHDL">
@@ -269,7 +263,7 @@
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="DC_Comm.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="16"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="24"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="54"/>
     </file>
     <file xil_pn:name="cmdInerpreter_TB.vhd" xil_pn:type="FILE_VHDL">
@@ -278,32 +272,20 @@
       <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="227"/>
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="227"/>
     </file>
-    <file xil_pn:name="DC_Comm_QBLinkTB.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="237"/>
-      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="237"/>
-      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="237"/>
-    </file>
     <file xil_pn:name="ipcore_dir/clk_Div.xco" xil_pn:type="FILE_COREGEN">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="52"/>
     </file>
     <file xil_pn:name="IO_Buffers.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="23"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="53"/>
-    </file>
-    <file xil_pn:name="IO_BUFTB.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="228"/>
-      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="228"/>
-      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="228"/>
     </file>
     <file xil_pn:name="Nat_Park_pkg.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="DC_commTB.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="17"/>
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="25"/>
       <association xil_pn:name="PostMapSimulation" xil_pn:seqID="241"/>
       <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="241"/>
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="241"/>
@@ -346,6 +328,34 @@
       <association xil_pn:name="PostMapSimulation" xil_pn:seqID="275"/>
       <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="275"/>
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="275"/>
+    </file>
+    <file xil_pn:name="../../../../mRICH_DC/SiREAD_srcs_for_UH/SiREAD_termite_NEXYS_top.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="20"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../../../mRICH_DC/ipcore_dir/clkgen.xco" xil_pn:type="FILE_COREGEN">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="18"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../../../mRICH_DC/SiREAD_srcs_for_UH/SIREAD_CONTROL.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="14"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../../../mRICH_DC/SiREAD_srcs_for_UH/SiREAD_ReadoutControl.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="13"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../../../mRICH_DC/SiREAD_srcs_for_UH/SiREAD_AnalogReadout.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="15"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../../../mRICH_DC/SiREAD_srcs_for_UH/I2C_GenericWrite.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="17"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="../../../../mRICH_DC/SiREAD_srcs_for_UH/readout_definitions.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="16"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="../SCROD_A5_RJ45/ipcore_dir/STATE_FIFO/STATE_FIFO.xise" xil_pn:type="FILE_COREGENISE">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
@@ -398,6 +408,9 @@
     <file xil_pn:name="../../mRICH_hodo_DC_V1/mRICH_hodo_DC_V1/hodo_dc_v1/cores/BMD_DC_CLK_GEN.xise" xil_pn:type="FILE_COREGENISE">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
+    <file xil_pn:name="../../../../mRICH_DC/ipcore_dir/clkgen.xise" xil_pn:type="FILE_COREGENISE">
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
   </files>
 
   <properties>
@@ -447,6 +460,7 @@
     <property xil_pn:name="Create Mask File" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Create ReadBack Data Files" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Cross Clock Analysis" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Custom Waveform Configuration File Behav" xil_pn:value="SCROD-DC_commLink.wcfg" xil_pn:valueState="non-default"/>
     <property xil_pn:name="DSP Utilization Ratio" xil_pn:value="100" xil_pn:valueState="default"/>
     <property xil_pn:name="Delay Values To Be Read from SDF" xil_pn:value="Setup Time" xil_pn:valueState="default"/>
     <property xil_pn:name="Device" xil_pn:value="xc6slx150t" xil_pn:valueState="non-default"/>
@@ -656,7 +670,7 @@
     <property xil_pn:name="Shift Register Minimum Size spartan6" xil_pn:value="2" xil_pn:valueState="default"/>
     <property xil_pn:name="Show All Models" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Simulation Model Target" xil_pn:value="VHDL" xil_pn:valueState="default"/>
-    <property xil_pn:name="Simulation Run Time ISim" xil_pn:value="1000 ns" xil_pn:valueState="default"/>
+    <property xil_pn:name="Simulation Run Time ISim" xil_pn:value="30 us" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Simulation Run Time Map" xil_pn:value="1000 ns" xil_pn:valueState="default"/>
     <property xil_pn:name="Simulation Run Time Par" xil_pn:value="1000 ns" xil_pn:valueState="default"/>
     <property xil_pn:name="Simulation Run Time Translate" xil_pn:value="1000 ns" xil_pn:valueState="default"/>
@@ -689,7 +703,7 @@
     <property xil_pn:name="Use Custom Simulation Command File Map" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Use Custom Simulation Command File Par" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Use Custom Simulation Command File Translate" xil_pn:value="false" xil_pn:valueState="default"/>
-    <property xil_pn:name="Use Custom Waveform Configuration File Behav" xil_pn:value="false" xil_pn:valueState="default"/>
+    <property xil_pn:name="Use Custom Waveform Configuration File Behav" xil_pn:value="true" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Use Custom Waveform Configuration File Map" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Use Custom Waveform Configuration File Par" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Use Custom Waveform Configuration File Translate" xil_pn:value="false" xil_pn:valueState="default"/>

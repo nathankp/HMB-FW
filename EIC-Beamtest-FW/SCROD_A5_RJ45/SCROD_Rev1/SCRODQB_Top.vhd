@@ -67,6 +67,7 @@ entity SCRODQB_Top is
 			TX_DC_P			 : OUT slv(NUM_DCs downto 0);--Serial output to DC 
 			SYNC_P			 : OUT slv(NUM_DCs downto 0); -- when '0' DC listens only, '1' DC reads back command
 			SYNC_N			 : OUT slv(NUM_DCs downto 0);
+			DC_RESET        : OUT slv(1 DOWNTO 0);
 			--Trigger to PMT SCRODs (mRICH)
 			GLOBAL_EVENT_P    : OUT slv(3 downto 0);
 			GLOBAL_EVENT_N    : OUT slv(3 downto 0)
@@ -146,6 +147,8 @@ signal dcm_status : slv(7 downto 0);
 signal dcm_rst : sl := '0';
 signal internal_fpga_clk : sl; --fast clk 
 signal internal_data_clk : sl; -- QBLink timing clock
+
+signal been_reset : sl := '0';
 --HW testing signals--
 constant correctData : slv(31 downto 0) := x"DEADBEEF"; --USER: set to register value you want to write to DC 
 signal sync : sl := '0'; -- synchronize timestamp counters on all DCs
@@ -158,9 +161,48 @@ attribute mark_debug of cmd_target_type : signal is "true";
 attribute mark_debug of trigLinkSynced : signal is "true";
 attribute mark_debug of serialClkLocked : signal is "true";
 attribute mark_debug of QBRst : signal is "true";
+attribute mark_debug of been_reset : signal is "true";
 begin
 
+--QBRst_process : process(internal_data_clk, been_reset)
+--variable counter : integer range 0 to 26 := 0;
+--begin
+--	If been_reset = '0' THEN
+--		If rising_edge(internal_data_clk) THEN
+--			counter := counter + 1;
+--		End If;
+--		If counter = 26 THEN
+--			been_reset <= '1';
+--		END IF;
+--		QBRst <= (others => '1');
+--	Else
+--		QBRst <= (others => '0');
+--	END IF;	
+--end process;
 
+QBRst_process : process(internal_data_clk, dcm_locked, been_reset, QBRst)
+variable counter : integer range 0 to 26 := 0;
+begin
+	IF been_reset = '0' AND dcm_locked = '1' THEN 
+		QBRst <= (others => '1');
+	   DC_RESET <= (others => '1');
+	END IF;
+	IF QBRst(0) = '1' AND dcm_locked = '1' THEN
+		IF counter = 3 THEN
+			DC_RESET <= (others => '0');
+		END IF;
+		IF counter = 26 THEN
+			QBRst <= (others => '0');
+			counter := 0;
+			
+			been_reset <= '1';
+		ELSIF rising_edge(internal_data_clk) THEN 
+			counter := counter + 1;
+		END IF;
+	END IF; 
+END PROCESS;
+
+dcm_rst <= '0';
 CLOCK_FANOUT : entity work.clk_Div
   port map
    (-- Clock in ports
@@ -174,96 +216,17 @@ CLOCK_FANOUT : entity work.clk_Div
 	 
 global_event <= (others => evntFlag);
 
-DC_reset : process(internal_data_clk) 
+DC_reset_process : process(internal_data_clk) --unused for now 10/01
+variable counter : integer range 0 to 2 := 0;
 begin 
 	IF rising_edge(internal_data_clk) THEN
 		sync <= CtrlRegister(2)(8);
-	QBrst <= CtrlRegister(2)(NUM_DCs downto 0);
+	--QBrst <= CtrlRegister(2)(NUM_DCs downto 0);
 	END IF;
 end process;
 
 
----- QBRst_process: process(internal_data_clk, trigLinkSynced) 
-----  variable counter : integer range 0 to 20 :=0;
-----  begin
-----   FOR I in 0 to Num_DCs LOOP
-----		If trigLinkSynced(I) = '0' and counter < 26 then
-----			If rising_edge(internal_data_clk) then
-----				counter := counter + 1;
-----			end if;
-----		elsif trigLinkSynced(I) = '0' and counter = 26 then
-----			counter := 0;
-----			QBRst(I) <= not QBRst(I);
-----		else
-----			QBrst(I) <= '0';
-----			counter := 0;
-----		end if;
-----	end loop;
-----end process;
---
--- QBRst_process1: process(internal_data_clk, trigLinkSynced(0)) 
---  variable counter : integer range 0 to 20 :=0;
---  begin
---		If trigLinkSynced(0) = '0' and counter < 26 then
---			If rising_edge(internal_data_clk) then
---				counter := counter + 1;
---			end if;
---		elsif trigLinkSynced(0) = '0' and counter = 26 then
---			counter := 0;
---			QBRst(0) <= not QBRst(0);
---		else
---			QBrst(0) <= '0';
---			counter := 0;
---		end if;
---end process;
---
---QBRst_process2: process(internal_data_clk, trigLinkSynced(1)) 
---  variable counter : integer range 0 to 20 :=0;
---  begin
---		If trigLinkSynced(1) = '0' and counter < 26 then
---			If rising_edge(internal_data_clk) then
---				counter := counter + 1;
---			end if;
---		elsif trigLinkSynced(1) = '0' and counter = 26 then
---			counter := 0;
---			QBRst(1) <= not QBRst(1);
---		else
---			QBrst(1) <= '0';
---			counter := 0;
---		end if;
---end process;
---
---QBRst_process3: process(internal_data_clk, trigLinkSynced(2)) 
---  variable counter : integer range 0 to 20 :=0;
---  begin
---		If trigLinkSynced(2) = '0' and counter < 26 then
---			If rising_edge(internal_data_clk) then
---				counter := counter + 1;
---			end if;
---		elsif trigLinkSynced(2) = '0' and counter = 26 then
---			counter := 0;
---			QBRst(2) <= not QBRst(2);
---		else
---			QBrst(2) <= '0';
---			counter := 0;
---		end if;
---end process;
---
---QBRst_process4: process(internal_data_clk, trigLinkSynced(3)) 
---  variable counter : integer range 0 to 20 :=0;
---  begin
---		If trigLinkSynced(3) = '0' and counter < 26 then
---			If rising_edge(internal_data_clk) then
---				counter := counter + 1;
---			end if;
---		elsif trigLinkSynced(3) = '0' and counter = 26 then
---			counter := 0;
---			QBRst(3) <= not QBRst(3);
---		else
---			QBrst(3) <= '0';
---			counter := 0;
---		end if;
---end process;
+
 
 
 --
